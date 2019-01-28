@@ -7,4 +7,14 @@ export default {
     setLoadingTrue(state) {
         state.isLoading = true
     },
+    ['LOGIN'] (state, user ) {
+        // fix incompatible
+        state.user = {
+            userName: user.user.userName,
+            id: user.user.id,
+            result: user.result,
+            message: user.message,
+            sessionid: user.sessionid
+        }
+    }
 }

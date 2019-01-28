@@ -1,38 +1,35 @@
 <template>
-  <div class="home">
-    <mt-button type="primary" @click.native="toast">primary</mt-button>
-  </div>
+    <div class="home">
+        aaaa
+
+    </div>
 </template>
 
 <script>
-import { Toast } from 'mint-ui'
+import dashboard from '@/components/dashboard'
+import history from '@/components/history'
 
 export default {
-  computed: {},
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+    components: {online1, online2, online3, dashboard, history},
+    computed: {},
+    data() {
+        return {
+            msg: '废气处理实时监控',
+        }
+    },
+    beforeDestroy() {
+    },
+    created() {
+    },
+    mounted() {
+    },
+    methods: {
     }
-  },
-  beforeDestroy () {},
-  created () {},
-  mounted () {},
-  methods: {
-    toast () {
-      Toast({
-        message: '提示',
-        position: 'bottom',
-        duration: 5000
-      })
-    }
-  }
 }
 </script>
 <style scoped lang="less">
-.home{
-  text-align: left;
-  button{
-    width: 100%
-  }
-}
+    .home {
+        background-color: #EFEFF4;
+    }
+
 </style>

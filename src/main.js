@@ -4,10 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // 移动端高清适配
-import 'lib-flexible/flexible.js'
-// 引入mint-ui组件和样式
-import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
+//import 'lib-flexible/flexible.js'
+// 引入mandMobile组件和样式
+import mandMobile from 'mand-mobile'
+import 'mand-mobile/lib/mand-mobile.css'
 // 引入设置的store
 import store from './store'
 // 引入faskclick库，解决移动端300s延迟问题
@@ -15,7 +15,7 @@ import fastClick from 'fastclick'
 
 Vue.config.productionTip = false
 
-Vue.use(MintUI)
+Vue.use(mandMobile)
 fastClick.attach(document.body)
 
 import axios from "./assets/js/api";

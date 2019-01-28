@@ -1,8 +1,8 @@
 {
-    "name": "vue-mintUI-mobile",
+    "name": "waste-gas-online",
     "version": "1.0.0",
-    "description": "vue-mintUI-mobile",
-    "author": "wanghuipeng",
+    "description": "waste-gas-online",
+    "author": "oliver",
     "private": true,
     "scripts": {
         "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -14,10 +14,11 @@
         "test": "node build/test.js"
     },
     "dependencies": {
+        "@antv/f2": "^3.3.4",
         "axios": "^0.16.2",
         "fastclick": "^1.0.6",
         "lib-flexible": "^0.3.2",
-        "mint-ui": "^2.2.13",
+        "mand-mobile": "^2.0.0-rc.5",
         "px2rem-loader": "^0.1.9",
         "vue": "^2.5.2",
         "vue-router": "^3.0.1",
